@@ -5,7 +5,7 @@ project (Tutorial)
 set (Tutorial_VERSION_MAJOR 1)
 set (Tutorial_VERSION_MINOR 0)
 
-# configure a haeder fiel to pass some of the CMake settings
+# configure a header fiel to pass some of the CMake settings
 # to the source code
 configure_file (
 	"${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"
