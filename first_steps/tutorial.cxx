@@ -9,6 +9,9 @@
 
 /* project */
 #include "TutorialConfig.h"
+#ifdef USE_MYMATH
+#include "mysqrt.h"
+#endif
 
 int main(int argc, char *argv[]) 
 {
@@ -31,9 +34,14 @@ int main(int argc, char *argv[])
 	/* fetch the input value and convert it to float */
 	valinput = atof(argv[1]);
 
+#ifdef USE_MYMATH	
+
+	/* write onto the output variable */
+	valoutput = mysqrt(valinput);
+#else
 	/* write onto the output variable */
 	valoutput = sqrt(valinput);
-
+#endif
 	/* write to stdout and return! */
 	fprintf(stdout, "The square root of %g is %g\n", valinput, valoutput);
 	return 0;	
