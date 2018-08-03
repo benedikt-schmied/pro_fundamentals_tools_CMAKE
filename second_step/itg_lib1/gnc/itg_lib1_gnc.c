@@ -14,7 +14,7 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <string.h>
-
+#include <stdio.h>
 /* own libraries */
 
 /* project */
@@ -48,6 +48,8 @@ int itg_lib1_gnc__init(void *_p)
 {
     /* automatic variables */
     int ret;
+
+    printf("hello target, this is one of your libraries\n");
 
     /* executable statements */
     ret = 0;
