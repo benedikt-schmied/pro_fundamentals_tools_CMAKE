@@ -4,4 +4,4 @@
 include_directories( ${CMAKE_CURRENT_BINARY_DIR} "." )
  
 # add the main library
-add_library(itg_lib1gnc CMakeCCompilerId.c )
+add_library(itg_lib1gnc itg_lib1_gnc.c )
