@@ -58,7 +58,7 @@ int {project_name}__init(void *_p)
 /**
  * @brief  mw_module_control__cleanup
  */
-int {project_name}__cleanup(void)
+int {project_name}__cleanup(void *_p)
 {
     /* automatic variables */
     int ret;

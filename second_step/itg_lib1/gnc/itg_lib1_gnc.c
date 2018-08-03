@@ -58,7 +58,7 @@ int itg_lib1_gnc__init(void *_p)
 /**
  * @brief  mw_module_control__cleanup
  */
-int itg_lib1_gnc__cleanup(void)
+int itg_lib1_gnc__cleanup(void *_p)
 {
     /* automatic variables */
     int ret;
